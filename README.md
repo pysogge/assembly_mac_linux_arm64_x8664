@@ -2,6 +2,18 @@
 
 Running on Apple M1, 2020; O.S. version 12.1
 
+## To Start (on a Mac M1)
+```
+cd mac_os_m1_arm64
+sh build_HelloWorld.sh
+
+[or]
+
+cd mac_os_m1_x86_64/
+sh build_HelloWorld.sh
+```
+
+
 ## Compile on Mac OS M1 as x86_64
 ```
 as -o ./exec/HelloWorld.o HelloWorld.s -arch x86_64
