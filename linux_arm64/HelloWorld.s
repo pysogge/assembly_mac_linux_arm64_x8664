@@ -19,7 +19,7 @@ _start: mov	X0, #1		// 1 = StdOut
 // Setup the parameters to exit the program
 // and then call the kernel to do it.
 	mov     X0, #0		// Use 0 return code
-	mov     X0, #93		// System call number 93 terminates this program
+	mov     X8, #93		// System call number 93 terminates this program
 	svc     0		// Call kernel to terminate the program
 
 .data
