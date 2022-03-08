@@ -7,14 +7,13 @@
 //
 
 .global _start			// Provide program starting address to linker
-//.align 2			// Make sure everything is aligned properly
 
 // Setup the parameters to print hello world
 // and then call the Kernel to do it.
 _start: mov	X0, #1		// 1 = StdOut
 	ldr	X1, =helloworld 	// string to print
 	mov	X2, #14	    	// min length of our string
-	mov	X8, #4		// Linux write system call (X8 vs X16)
+	mov	X8, #64		// Linux write system call (X8 vs X16)
 	svc	0		// Call kernel to output the string
 
 // Setup the parameters to exit the program

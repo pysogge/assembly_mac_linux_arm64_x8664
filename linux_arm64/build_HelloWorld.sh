@@ -1,3 +1,3 @@
-as -o ./exec/HelloWorld.o HelloWorld.s -arch arm64
-ld -o ./exec/HelloWorld.out ./exec/HelloWorld.o -arch arm64 
+as -o ./exec/HelloWorld.o HelloWorld.s
+ld -o ./exec/HelloWorld.out ./exec/HelloWorld.o
 ./exec/HelloWorld.out
